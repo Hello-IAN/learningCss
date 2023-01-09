@@ -1,0 +1,23 @@
+
+body {
+	font-size: 22px;
+}
+
+main {
+	font-family: monospace;
+}
+p {
+	color: wheat;
+}
+
+.hilighting {
+	text-transform: uppercase;
+	background-color: yellowgreen;
+}
+.wheat {
+	color: tomato;
+}
+
+#sec {
+	color: turquoise;
+}

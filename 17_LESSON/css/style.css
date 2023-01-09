@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto@display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	font: 1.5rem "Roboto", sans-serif;
+
+	background-color: aliceblue;
+	background-image: radial-gradient(whitesmoke, antiquewhite);
+	display: flex;
+	flex-direction: column;
+}
+
+header, nav, main, footer {
+	display: grid;
+	place-content: center;
+	grid-template-columns: 100%;
+	text-align: center;
+}
+
+header, footer {
+	position: sticky;
+	background-color: royalblue;
+	color: blanchedalmond;
+}
+
+header {
+	top:0;
+}
+
+nav {
+	background-color: royalblue;
+	color: paleturquoise;
+	padding: 0.5rem;
+	border-bottom: 2px, solid antiquewhite;
+}
+main {
+	flex-grow: 1;
+}
+
+footer {
+	bottom: 0;
+}
+
+/* || SMALL */
+
+@media screen and (min-width: 576px) {
+	body {
+		background-color: papayawhip;
+		background-image: radial-gradient(papayawhip, paleturquoise);
+	}
+	nav {
+		display: none;
+	}
+}
+
+/* || MEDIUM */
+
+@media screen and (min-width: 768px) {
+	body {
+		background-color: goldenrod;
+		background-image: radial-gradient(papayawhip, goldenrod	);
+	}
+	nav {
+		display: none;
+	}
+}
+
+/* || LARGE */
+
+@media screen and (min-width: 992px) {
+	body {
+		background-color: firebrick;
+		background-image: radial-gradient(papayawhip, firebrick	);
+	}
+	nav {
+		display: none;
+	}
+}
+
+/* || XL */
+
+@media screen and (min-width: 1200px) {
+	body {
+		background-color: plum;
+		background-image: radial-gradient(papayawhip, plum);
+	}
+	nav {
+		display: none;
+	}
+}
+
+/* || MOBILE DEVICE LANDSCAPE */
+
+@media screen and (max-height: 452px) and (min-aspect-ratio: 7/4) {
+	body {
+		background-color: dodgerblue;
+		background-image: radial-gradient(papayawhip, dodgerblue);
+	}
+	h1, h2 {
+		font-size: 1.5rem;
+	}
+	nav {
+		display: none;
+	}
+}

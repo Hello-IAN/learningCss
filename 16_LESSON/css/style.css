@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito@display=swap");
+
+/* begin Reset */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* End Reset */
+
+img { display: block; }
+
+/* Utility Classes */
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.offscreen {
+	position: absolute;
+	left: -100000px;
+}
+
+body {
+	font-family: "Nunito", sans-serif;
+	min-height: 100vh;
+	background-color: aliceblue;
+/* 	background-image: url(../img/profile.png), linear-gradient(to left, steelblue, #fff);
+	background-repeat: repeat-y, no-repeat;
+	background-size: 20%, auto; */
+}
+
+.container {
+	background-color: #fbd29d;
+	background-image: url('../img/pat1.jpg');
+	background-repeat: cover;
+}
+
+
+.hero {
+	border-bottom: 2px solid #000;
+	padding: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 30px;
+
+	background-color: hsla(0, 0%, 100%, 0.349);
+	
+}
+
+.h1 {
+	font-size: 500%;
+	color: snow;
+	text-shadow: 2px 2px 5px  gainsboro;
+
+}
+.profile-pic-figure {
+	width: 35%;
+}
+
+.profile-pic-figure img{
+	width: 100%;
+	height: auto;
+	min-width: 100px;
+	border: 5px double gray;
+	border-radius: 60%;
+
+}
+.example {
+	margin-top: 1rem;
+	padding-left: 20px;
+	border: 1px solid paleturquoise;
+}
+
+.exmaple img {
+	width: 25%;
+	height: auto;
+}
+
+.clip {
+	font-weight: 800;
+	font-size: 18rem;
+	text-align: center;
+	background-image: url(../img/part1.png);
+	background-size: 100%;
+	text-transform: uppercase;
+	-webkit-background-clip: text;
+	color: hsla(0, 0%, 0%, 0.29);
+}
